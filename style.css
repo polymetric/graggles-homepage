@@ -36,6 +36,8 @@ ul {
     background: #ffd90f;
     color:black;
     height: 60px;
+    /* display: flex; */
+    /* height:100%; */
 }
 
 .navbar .logo {
@@ -118,7 +120,19 @@ ul {
     box-shadow: 0 3px 5px rgba(0,0,0,0.6);
 }
 
+.box:first-child {
+    margin-left:0;
+}
+
+.box:last-child {
+    margin-right:0;
+}
+
 @media(max-width: 768px) {
+    .navbar {
+        height: 100%;
+    }
+
     .header .container {
         flex-direction: column;
         padding-top: 20px;
